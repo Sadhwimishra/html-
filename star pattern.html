@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+ function abc()
+ {
+ var r,c,tr=5,s;
+for(r=tr;r>1;r--)
+{
+for(s=1;s<=tr-r;s++)
+{
+p1.innerHTML+="&nbsp;&nbsp;"
+}
+for(c=1;c<=r*2-1;c++)
+{
+p1.innerHTML+="*";
+}
+p1.innerHTML+="<br/>";
+}
+for(r=1;r<=tr;r++)
+{
+for(s=1;s<=tr-r;s++)
+{
+p1.innerHTML+="&nbsp;&nbsp;"
+}
+for(c=1;c<=r*2-1;c++)
+{
+p1.innerHTML+="*";
+}
+p1.innerHTML+="</br>";	
+}
+}
+</script>
+</head>
+<body>
+<button onclick="abc()">show</button>
+<p id="p1"></p>
+</body>
+</html>

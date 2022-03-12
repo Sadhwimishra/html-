@@ -1,0 +1,68 @@
+<html>
+<head>
+<script>
+function add()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+a=parseInt(a);
+b=parseInt(b);
+var c=a+b;
+document.getElementById("t3").value=c;
+//alert(c);
+//alert("addition ="+c);
+alert(a+"+"+b+"="+c);
+}
+function sub()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+a=parseInt(a);
+b=parseInt(b);
+var c=a-b;
+alert(c);
+}
+function multiply()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+a=parseInt(a);
+b=parseInt(b);
+var c=a*b;
+alert(c);
+}
+function division()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+a=parseInt(a);
+b=parseInt(b);
+var c=a/b;
+alert(c);
+}
+function remainder()
+{
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+a=parseInt(a);
+b=parseInt(b);
+var c=a%b;
+alert(c);
+}
+</script>
+</head>
+<body>
+enter first number
+<input type="text" id="t1"/></br></br>
+enter second number
+<input type="text" id="t2"/></br>
+</br>
+<input type="text" id="t3"/></br>
+<button onclick="add()">add</button>
+<button onclick="sub()">sub</button>
+<button onclick="multiply()">multiply</button>
+<button onclick="division()">division</button>
+<button onclick="remainder()">remainder</button>
+
+</body>
+</html>

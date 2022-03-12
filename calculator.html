@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+button
+{
+width:55px;
+height:55px;
+padding:8px;
+background-color:gold;
+border-radius:50%;
+font-size:20px;
+font-weight:bold;
+border:3px solid darkgray;
+box-shadow:0px opx 10px #333;
+}
+
+input
+{
+width:210px;
+height:35px;
+background-color:silver;
+color:black;
+font-size:20px;
+//font-weight:bold;
+//box-shadow:4px 4px 4px 4px black;
+text-align:right;
+//padding:10px 3px;
+margin:10px 0px 0px  10px;
+}
+
+table{
+background-color:orange;
+box-shadow: 0px 7px 5px 7px gold;
+border-radius:10%;
+}
+
+</style>
+</head>
+<body>
+<center>
+<form name="cal">
+<table>
+
+<tr>
+<td colspan="4"><input type="text" name="box"></td>
+ </tr>
+		  <tr>
+		  <td><button type="button"  style="background-color:tomato"onclick="cal.box.value=''">c</button></td>
+		  <td><button type="button" style="background-color:tomato" onclick="cal.box.value+='+'">+</button></td>
+		  <td><button type="button" style="background-color:tomato" onclick="cal.box.value+='-'">-</button></td>
+		  <td><button type="button" style="background-color:tomato"onclick="cal.box.value+='*'">*</button></td>
+		  </tr>
+		 
+		 <tr>
+		  <td><button type="button" onclick="cal.box.value+='7'">7</button></td>
+		  <td><button type="button" onclick="cal.box.value+='8'">8</button></td>
+		  <td><button type="button" onclick="cal.box.value+='9'">9</button></td>
+		  <td><button type="button" style="background-color:tomato" onclick="cal.box.value+='/'">/</button></td></tr>
+		 
+		 <tr>
+		  <td><button type="button" onclick="cal.box.value+='4'">4</button></td>
+		  <td><button type="button" onclick="cal.box.value+='5'">5</button></td>
+		  <td><button type="button" onclick="cal.box.value+='6'">6</button></td>
+		  <td><button type="button" style="background-color:tomato" onclick="cal.box.value+='%'">%</button></td></tr>
+		 <tr>
+		  <td><button type="button" onclick="cal.box.value+='1'">1</button></td>
+		  <td><button type="button" onclick="cal.box.value+='2'">2</button></td>
+		  <td><button type="button" onclick="cal.box.value+='3'">3</button></td>
+		  <td><button type="button" style="background-color:tomato;"onclick="cal.box.value=eval(cal.box.value)" >=</button></td></tr>
+		 <tr>
+		  <td><button type="button" onclick="cal.box.value+='0'">0</button></td>
+		  <td><button type="button" onclick="cal.box.value+='.'">.</button></td>
+		  <td><button type="button" onclick="cal.box.value+='00'">00</button></td>
+		 </tr>
+		 </table>
+		 </form>
+		 </center>
+		 </body>
+		 </html>
+		 

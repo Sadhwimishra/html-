@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function abc()
+{
+var a=t1.value; 
+//if(a.match(/[a-z]/))
+//if(a.match(/[A-Za-z]/))
+if(a.match(/[A-Za-z0-9\s]/))
+//if(a.match(/[A-Za-z0-9]/))
+//if(a.match(/^[A-Za-z0-9]+$/))
+{
+alert("ok");
+} 
+else
+{
+alert("not matched");
+}                                                                                                  
+}
+</script>
+</head>
+<body>
+enter your name
+<input type="text" id="t1"/>
+<br/><br/>
+<button onclick ="abc()">save</button>
+</body>
+</html>

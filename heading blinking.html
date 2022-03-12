@@ -1,0 +1,26 @@
+<html> 
+<head>
+
+<script>
+var b=["red","yellow","aqua","tomato","navy","silver","sandybrown","olive","hotpink","teal","navy",];
+var i=0;
+function myheading()
+{
+a.style.color=b[i];
+i++;
+if(i==b.length)
+{
+i=0;
+}
+window.setTimeout("myheading()",1000);
+}
+
+</script>
+
+</head>
+<center>
+<body onload="myheading()" id="a1">
+<h1 id="a">PNP LEARNING AND RESEARCH CENTER</h1>
+</center>
+</body>
+</html>

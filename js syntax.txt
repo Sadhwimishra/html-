@@ -1,0 +1,96 @@
+variable
+--------
+var-keyword variable_name
+var a; //decleration
+a=10.5
+---------------
+
+function
+=========syntax
+function function_name()
+{
+body of function
+}
+
+ demo
+ =========>
+ 
+<html>
+<head>
+<script>
+function abc()
+{
+var a=10;
+alert(a);
+}
+</script>
+</head>
+<body>
+<button onclick="abc()">click</button>
+</body>
+</html>
+
+
+
+=====>>.
+
+javascript ek programmimmg language hai--
+function demo()
+{
+var a=10;
+var b=20;
+var c=a+b;
+alert(c);
+}
+
+
+or
+
+=====>>.
+function demo()
+{
+ a=10
+ b=20
+c=a+b
+alert(c)
+}
+
+
+or
+
+function demo()
+{
+ var a=10
+ var b=20
+ var c=a+b
+ alert(c)
+}
+
+
+
+
+==============
+
+comment==>>
+
+
+MULTI LINE COMMENT==
+/*
+  --------------
+  --------------
+  -----------*/
+   
+   SINGLE LINE COMMENT==
+  
+  //-------
+  
+ ----CASE SENSTIVVE----
+ 
+  function demo()
+  {
+  var a=10;
+  var A=20
+  alert(A);
+  }
+  
+  

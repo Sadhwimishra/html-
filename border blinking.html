@@ -1,0 +1,33 @@
+<html> 
+<head>
+<style>
+#a
+{
+height:400px;
+width:400px;
+border:double 70px;
+}
+</style>
+<script>
+var b=["red","yellow","aqua","tomato","navy","silver"];
+var i=0;
+function mydiv()
+{
+a.style.borderColor=b[i];
+i++;
+if(i==b.length)
+{
+i=0;
+}
+window.setTimeout("mydiv()",500);
+}
+
+</script>
+
+</head>
+<center>
+<body onload="mydiv()" id="a1">
+<div id="a"></div>
+</center>
+</body>
+</html>

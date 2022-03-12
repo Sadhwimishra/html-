@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+#outer
+{
+height:800px;
+width:800px;
+border:1px solid black;
+}
+.black
+{
+  height:100px;
+  width:100px;
+  background-color:black;
+  float:left;
+}
+.white
+{
+    height:100px;
+	width:100px;
+	float:left;
+	
+}
+.row{
+height:100px;
+width:800px;
+}
+
+</style>
+<script>
+function  chess()
+{
+var output="";
+var r,c;
+for(r=1;r<=8;r++)
+{
+output+="<div class='row'>";
+for(c=1;c<=8;c++)
+{
+if(r%2==0)
+{
+  if(c%2==0)
+  output+="<div class='white'></div>";
+ else
+   output+="<div class='black'></div>";
+   }
+else
+{
+if(c%2==0)
+output+="<div class='black'></div>";
+else
+output+="<div class='white'></div>";
+}
+}
+output+="</div>";
+}
+outer.innerHTML=output;
+}
+</script>
+</head>
+<body onload="chess()">
+<div id="outer"></div>
+
+</body>
+</html>
